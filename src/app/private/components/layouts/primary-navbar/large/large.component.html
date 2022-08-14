@@ -1,0 +1,66 @@
+<nav class="large-navbar position-absolute bg-white shadow">
+  <a href="" class="nav-link mt-4 text-center"
+    ><img src="assets/img/logo-text.png" class="img-fluid" alt=""
+  /></a>
+  <div class="my-3" [ngSwitch]="option">
+    <div class="ml-3" *ngSwitchCase="'dashboard'">
+      <h1 class="h5 title">Dashboard</h1>
+      <p class="detail mr-1">Look at the overall trend of the projects</p>
+      <div class="">
+        <a routerLink="dashboard" routerLinkActive="active" class="nav-link rounded-left"
+          ><i class="bi bi-bar-chart-line-fill mr-2"></i>Dashboard</a
+        >
+      </div>
+    </div>
+    <div class="ml-3" *ngSwitchCase="'inventories'">
+      <h1 class="h5 title">Inventories</h1>
+      <p class="detail mr-1">
+        Look at the Inventory and Manage the Inventories
+      </p>
+      <div class="">
+        <a routerLink="inventories/list" routerLinkActive="active" class="nav-link rounded-left my-2"
+          ><i class="bi bi-folder-fill mr-2"></i>Inventories</a
+        >
+        <a routerLink="inventories/create" routerLinkActive="active" class="nav-link rounded-left my-2"
+          ><i class="bi bi-folder-plus mr-2"></i>Add Inventory</a
+        >
+      </div>
+    </div>
+    <div class="ml-3" *ngSwitchCase="'projects'">
+      <h1 class="h5 title">Projects</h1>
+      <p class="detail mr-1">
+        Create New Project and Manage the Projects
+      </p>
+      <div class="">
+        <a routerLink="projects/list" routerLinkActive="active" class="nav-link rounded-left my-2"
+          ><i class="bi bi-journal-bookmark-fill mr-2"></i>Projects</a
+        >
+        <a routerLink="projects/create" class="nav-link link rounded-left my-2"
+          ><i class="bi bi-file-earmark-plus-fill mr-2"></i>Create
+          Project</a
+        >
+      </div>
+    </div>
+    <div class="ml-3" *ngSwitchCase="'tasks'">
+      <h1 class="h5 title">Tasks</h1>
+      <p class="detail mr-1">Look at Tasks and Work Finish Tasks</p>
+      <div class="">
+        <a routerLink="tasks" routerLinkActive="active" class="nav-link rounded-left my-2"
+          ><i class="bi bi-clipboard2-data-fill mr-2"></i>My Tasks</a
+        >
+      </div>
+    </div>
+    <div class="ml-3" *ngSwitchCase="'users'">
+      <h1 class="h5 title">Users</h1>
+      <p class="detail mr-1">Create New User and Manage User Details</p>
+      <div class="">
+        <a routerLink="users/list" routerLinkActive="active" class="nav-link rounded-left my-2"
+          ><i class="bi bi-person-lines-fill mr-2"></i>All Users</a
+        >
+        <a routerLink="users/create" routerLinkActive="active" class="nav-link rounded-left my-2"
+          ><i class="bi bi-person-plus-fill mr-2"></i>Create User</a
+        >
+      </div>
+    </div>
+  </div>
+</nav>

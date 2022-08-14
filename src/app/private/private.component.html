@@ -1,0 +1,16 @@
+<div class="">
+  <app-primary-navbar
+    class="nav-bar position-fixed"
+    [ngClass]="{ active: !navState }"
+  ></app-primary-navbar>
+  <div
+    class="nav-background d-block d-md-none position-fixed"
+    *ngIf="!navState"
+  ></div>
+  <div class="mainWindow" [ngClass]="{ active: navState }">
+    <app-secondary-navbar></app-secondary-navbar>
+    <div class="mx-4">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

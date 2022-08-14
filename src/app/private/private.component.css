@@ -1,0 +1,37 @@
+/* nav open main window size */
+.mainWindow {
+  margin-left: 17rem;
+  transition: .3s;
+}
+
+/* nav close main window size */
+.mainWindow.active {
+  margin-left: 0;
+}
+
+/* nav closed state */
+.nav-bar {
+  left: -17rem;
+  transition: .3s;
+  z-index: 99;
+}
+
+/* navbar opened state */
+.nav-bar.active {
+  left: 0;
+}
+
+/* blur background for mobile navbar active state */
+.nav-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 98;
+}
+
+/* styling for mobile view */
+@media only screen and (max-width: 768px) {
+  .mainWindow {
+    margin-left: 0rem;
+  }
+}

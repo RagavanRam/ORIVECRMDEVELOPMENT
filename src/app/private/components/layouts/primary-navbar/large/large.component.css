@@ -1,0 +1,24 @@
+.large-navbar {
+  margin-left: 5rem;
+  width: 12rem;
+  height: 100vh;
+  transition: ease-in-out;
+}
+
+.title {
+  color: #82522b;
+}
+
+.detail {
+  color: #c98e5e;
+  font-size: 12px;
+}
+
+.nav-link {
+  color: #f37e20;
+  font-size: 14px;
+}
+
+.nav-link.active {
+  background-color: #eee;
+}

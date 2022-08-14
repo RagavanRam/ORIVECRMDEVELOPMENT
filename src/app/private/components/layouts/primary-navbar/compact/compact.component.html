@@ -1,0 +1,35 @@
+<nav class="compact-navbar position-fixed text-center">
+  <div class="my-3">
+    <button class="btn btn-light px-3 d-inline d-md-none rounded-lg" (click)="onNavCloseClick()"><i class="bi bi-x h4"></i></button>
+    <a
+      [ngClass]="{active : option == 'dashboard'}"
+      (mouseenter)="changeNav('dashboard')"
+      class="nav-link my-3 mx-2 py-3 rounded-circle"
+      ><i class="bi bi-pie-chart-fill h4 text-light"></i
+    ></a>
+    <a
+      [ngClass]="{active : option == 'inventories'}"
+      (mouseenter)="changeNav('inventories')"
+      class="nav-link my-3 mx-2 py-3 rounded-circle"
+      ><i class="bi bi-stack h4 text-light"></i
+    ></a>
+    <a
+      [ngClass]="{active : option == 'projects'}"
+      (mouseenter)="changeNav('projects')"
+      class="nav-link my-3 mx-2 py-3 rounded-circle"
+      ><i class="bi bi-clipboard-data-fill h4 text-light"></i
+    ></a>
+    <a
+      [ngClass]="{active : option == 'tasks'}"
+      (mouseenter)="changeNav('tasks')"
+      class="nav-link my-3 mx-2 py-3 rounded-circle"
+      ><i class="bi bi-list-task h4 text-light"></i
+    ></a>
+    <a
+      [ngClass]="{active : option == 'users'}"
+      (mouseenter)="changeNav('users')"
+      class="nav-link my-3 mx-2 py-3 rounded-circle"
+      ><i class="bi bi-people-fill h4 text-light"></i
+    ></a>
+  </div>
+</nav>
