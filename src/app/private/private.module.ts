@@ -28,7 +28,6 @@ import { FooterComponent } from './components/layouts/footer/footer.component';
     CoreModule,
     SharedModule,
     NgbModule
-  ],
-  providers: [AuthGuard]
+  ]
 })
 export class PrivateModule { }
