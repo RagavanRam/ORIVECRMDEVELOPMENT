@@ -2,7 +2,7 @@
 .mainWindow {
   max-height: 100vh;
   overflow: scroll;
-  background-color: #fff;
+  background-color: var(--white);
   margin-left: 17rem;
   transition: .3s;
 }

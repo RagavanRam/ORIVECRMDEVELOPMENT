@@ -2,10 +2,10 @@
 .compact-navbar {
   width: 5rem;
   height: 100vh;
-  background-color: #f37e20;
+  background-color: var(--primary);
 }
 
 /* navlink active state style */
 .nav-link.active {
-  background-color: #af6f3b;
+  background-color: var(--secondary);
 }

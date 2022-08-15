@@ -88,7 +88,7 @@
 
 /* add hover style for btn */
 .btn.btn-light:hover {
-  background-color: #f8f9fa;
+  background-color: var(--light-white);
 }
 
 /* ng-bootstrap dropdown arrow remove */
@@ -105,5 +105,5 @@
 }
 
 .navSignOut:active {
-  background-color: #f8f9fa;
+  background-color: var(--light-white);
 }

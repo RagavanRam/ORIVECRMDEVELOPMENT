@@ -6,19 +6,19 @@
 }
 
 .title {
-  color: #82522b;
+  color: var(--dark-brown);
 }
 
 .detail {
-  color: #c98e5e;
+  color: var(--light-brown);
   font-size: 12px;
 }
 
 .nav-link {
-  color: #f37e20;
+  color: var(--primary);
   font-size: 14px;
 }
 
 .nav-link.active {
-  background-color: #eee;
+  background-color: var(--light-gray);
 }
