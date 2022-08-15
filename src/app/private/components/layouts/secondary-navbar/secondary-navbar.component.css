@@ -95,3 +95,15 @@
 .dropdown-toggle::after {
   display:none;
 }
+
+.navUserName {
+  font-size: 12px;
+}
+
+.navSignOut {
+  font-size: 13px;
+}
+
+.navSignOut:active {
+  background-color: #f8f9fa;
+}

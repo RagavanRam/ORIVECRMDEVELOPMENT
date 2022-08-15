@@ -9,8 +9,9 @@
   ></div>
   <div class="mainWindow" [ngClass]="{ active: navState }">
     <app-secondary-navbar></app-secondary-navbar>
-    <div class="mx-4">
+    <div class="mx-4 content">
       <router-outlet></router-outlet>
     </div>
+    <app-footer class="footer" [ngClass]="{ active: navState }"></app-footer>
   </div>
 </div>

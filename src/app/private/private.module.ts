@@ -11,6 +11,7 @@ import { PrimaryNavbarComponent } from './components/layouts/primary-navbar/prim
 import { CompactComponent } from './components/layouts/primary-navbar/compact/compact.component';
 import { LargeComponent } from './components/layouts/primary-navbar/large/large.component';
 import { SecondaryNavbarComponent } from './components/layouts/secondary-navbar/secondary-navbar.component';
+import { FooterComponent } from './components/layouts/footer/footer.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { SecondaryNavbarComponent } from './components/layouts/secondary-navbar/
     CompactComponent,
     LargeComponent,
     SecondaryNavbarComponent,
+    FooterComponent,
   ],
   imports: [
     PrivateRoutingModule,

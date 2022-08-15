@@ -29,7 +29,7 @@ export class PrivateComponent implements OnInit, OnDestroy {
     .pipe(filter(event => event instanceof NavigationEnd))
     .subscribe(() => {
       if (Utils.isMobile()) {
-        this.navState = true;
+        this.navService.toggleNav(true);
       }
     });
 

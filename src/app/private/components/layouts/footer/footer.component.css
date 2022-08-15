@@ -1,0 +1,31 @@
+.footer-btn {
+  font-size: 13px;
+}
+
+.img {
+  width: 68px;
+  height: 62.33px;
+}
+
+.footer-content {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 280px) {
+  .content-wrap {
+    margin-left: 0;
+    margin-left: 8px;
+  }
+
+  .footer-btn {
+    font-size: 10px;
+  }
+
+  .content-break {
+    display: none;
+  }
+
+  .footer-content {
+    font-size: 10px;
+  }
+}

@@ -6,15 +6,14 @@
   </button>
   <span><img src="assets/img/logo - Copy.png" class="img" alt="" [ngClass]="{active: isCollapsed}"></span>
   <ul class="navbar-nav d-flex flex-row align-items-center">
-    <li class="nav-item mr-2 mr-md-3">
+    <li class="nav-item mr-2 mr-md-3 d-none d-md-flex">
       <button class="btn btn-light nav-btn nav-link"><i class="bi bi-arrows-fullscreen"></i></button>
     </li>
     <li class="nav-item mr-1 mr-md-4" ngbDropdown display="dynamic" placement="bottom-right">
       <button class="btn btn-light nav-btn nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown3" role="button"><i class="bi bi-person-circle h5"></i></button>
-      <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
-        <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
-        <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
-        <a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+      <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu border-0 shadow rounded-lg">
+        <p class="navUserName text-center"><i class="bi bi-person-check mr-2"></i>7898675634</p>
+        <a ngbDropdownItem href="#" (click)="$event.preventDefault()" class="navSignOut text-center">Sign Out</a>
       </div>
     </li>
   </ul>
