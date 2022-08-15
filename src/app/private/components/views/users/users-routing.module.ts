@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { UsersComponent } from './users.component';
+import { UserActionComponent } from './user-action/user-action.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 const routes: Routes = [{
   path: '', component: UsersComponent, children: [
     {path: '', redirectTo: '/list', pathMatch: 'full'},
-    {path: 'list', loadChildren: () => import('./user-list/user-list.module').then(m => m.UserListModule)},
-    {path: 'create', loadChildren: () => import('./user-action/user-action.module').then(m => m.UserActionModule)}
+    {path: 'list', component: UserListComponent},
+    {path: 'create', component: UserActionComponent}
   ]
 }];
 

@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ProjectsComponent } from './projects.component';
+import { ProjectActionComponent } from './project-action/project-action.component';
+import { ProjectListComponent } from './project-list/project-list.component';
 
 const routes: Routes = [
   {path: '', component: ProjectsComponent, children: [
     {path: '', redirectTo: '/list', pathMatch: 'full'},
-    {path: 'list', loadChildren: () => import('./project-list/project-list.module').then(m => m.ProjectListModule)},
-    {path: 'create', loadChildren: () => import('./project-action/project-action.module').then(m => m.ProjectActionModule)}
+    {path: 'list', component: ProjectListComponent},
+    {path: 'create', component: ProjectActionComponent}
   ]}
 ];
 

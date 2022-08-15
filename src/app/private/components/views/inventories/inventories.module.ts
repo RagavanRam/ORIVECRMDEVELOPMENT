@@ -9,7 +9,9 @@ import { InventoryActionComponent } from './inventory-action/inventory-action.co
 
 @NgModule({
   declarations: [
-    InventoriesComponent
+    InventoriesComponent,
+    InventoryListComponent,
+    InventoryActionComponent
   ],
   imports: [
     CommonModule,
